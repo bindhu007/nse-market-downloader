@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  nse-downloader:
+    build: .
+    container_name: nse-downloader
+    volumes:
+      - ./output:/app/output
+      - ./logs:/app/logs
+    command: [] # Runs "python main.py" by default
